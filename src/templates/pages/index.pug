@@ -1,0 +1,89 @@
+extends ../layouts/main-layout.pug
+
+block title
+  title Главная
+
+block content
+  .container
+    main.index
+      .features
+        .features__row
+          .feautres__item
+            .features__title Материалы
+            .features__name на любой вкус 
+          .feautres__item
+            .features__title Материалы
+            .features__name на любой вкус 
+          .feautres__item
+            .features__title Материалы
+            .features__name на любой вкус 
+        .features__row
+          .features__gallery
+            .gallery
+              .gallery__title Дрели
+              .gallery__text Соседям на радость!
+              figure.gallery__content
+                img.gallery__img(src="", alt="")
+              button.gallery__btn prev
+              button.gallery__next next
+              a(href="/catalog.html").gallery__link Открыть каталог
+          .features__column
+            .feautres__item
+              .features__title Материалы
+              .features__name на любой вкус 
+            .feautres__item
+              .features__title Материалы
+              .features__name на любой вкус 
+      .popular-products
+        .popular-product__title-wrap
+          .popular-product__title Популярные товары:
+          a(href="#").popular-product__link Все популярные товары
+        .popular-product__wrap
+          .popular-product__item
+            .popular-product__item-wrap
+              img(src="", alt="").popular-product__item-img
+            .popular-product__item-title Перфоратор BOSCH BEG 9000
+            .popular-product__item-old-price 32500 Р.
+            .popular-product__item-price 25500 Р.
+      .popular-products
+        .popular-product__title-wrap
+          .popular-product__title Популярные товары:
+          a(href="#").popular-product__link Все производители
+        .popular-product__wrap
+          .popular-product__item
+            .popular-product__item-wrap
+              img(src="", alt="").popular-product__item-img
+      .index-service
+        .index-serice__title Сервисы
+        .index-service__text Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятнымиdiv
+        .index-service__delivery
+          .index-service__delivery
+            .index-service__delivery-wrap-img
+              img(src="", alt="").index-service__delivery-img
+              .index-service__delivery-wrap
+                .index-service__delivery-title Доставка
+                .index-service__delivery-tex Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+      .index-contact
+        .index-contact__left
+          .index-contact__title Комания Техномарт
+          .index-contact__text Настоящий мужской шоппинг начинается здесь! Оромный выбор товаров для ремонта и строительства не оставит равнодушнными любилетей сэкономить на гастарбайтерах.
+          .index-contact__text Настоящий мужской шоппинг начинается здесь! Оромный выбор товаров для ремонта и строительства не оставит равнодушнными любилетей сэкономить на гастарбайтерах.
+          ul.index-contact__list
+            li.index-contact__item Деловые линии
+            li.index-contact__item Автотрейдинг
+            li.index-contact__item ЖелДорЭкспедиция
+        .index-contact__right
+          .index-contact__title Контакты
+          .index-contact__text Вы можете забрать товар сами, заевах в наш офис:
+          .index-contact__map
+          a.index-contact__link(href="#") Заблудились? Напишите нам!
+         
+
+
+
+            
+
+    
+
+    
+

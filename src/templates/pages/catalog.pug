@@ -1,0 +1,88 @@
+extends ../layouts/main-layout.pug
+
+block title
+  title Каталог
+
+block content
+  main.catalog
+    include ../common/breadcrumbs.pug
+    h1.catalog__title Перфораторы
+    .catalog__left
+      .filter
+        form(action="").filter__form
+          .filter__title Фильтр:
+          .filter__block
+            .filter__block-title Цена:
+            .filter-controll
+              .filter-controll__line
+              i.filter-controll-circle
+              i.filter-controll-circle
+              .filter-controll__footer
+                input(type="text").filter-controll__input
+                span -
+                input(type="text").filter-controll__input
+          .filter__block
+            .filter__block-title Производители:
+              label.checkbox-group.filter__checkbox-label
+                input.checkbox-group__input(type='checkbox', name='')
+                span.checkbox-group__indicator
+                span.checkbox-group__text Bosch
+              label.checkbox-group.filter__checkbox-label
+                input.checkbox-group__input(type='checkbox', name='')
+                span.checkbox-group__indicator
+                span.checkbox-group__text Интерскол
+              label.checkbox-group.filter__checkbox-label
+                input.checkbox-group__input(type='checkbox', name='')
+                span.checkbox-group__indicator
+                span.checkbox-group__text Makita
+              label.checkbox-group.filter__checkbox-label
+                input.checkbox-group__input(type='checkbox', name='')
+                span.checkbox-group__indicator
+                span.checkbox-group__text Dewalt
+              label.checkbox-group.filter__checkbox-label
+                input.checkbox-group__input(type='checkbox', name='')
+                span.checkbox-group__indicator
+                span.checkbox-group__text Hitachi
+          .filter__block
+            .filter__block-title Питание:
+            label.radio-group.filter__checkbox-label
+              input.radio-group__input(type='checkbox', name='')
+              span.radio-group__indicator
+              span.radio-group__text Аккумуляторные
+            label.radio-group.filter__checkbox-label
+              input.radio-group__input(type='checkbox', name='')
+              span.radio-group__indicator
+              span.radio-group__text 
+          button.filter__button Показать
+    .catalog__right
+      .product-sort
+        .product-sort__title Сортировка
+        .product-sort__item По цене
+        .product-sort__item По типу
+        .product-sort__item По функционалу
+        button.product-sort__ascending ascending 
+        button.product-sort__descending descending
+      .catalog-products
+        article.catalog-product
+          .catalog-product__img-wrap
+            img(src="", alt="").catalog-product__img
+            .catalog-product__title Перфоратор Bosch BFG 3000
+            .catalog-product__old-price 22500 Р.
+            .catalog-product__price 15500 Р.
+      .history
+        ul.history__list
+          li.history__item
+            a(href="#").history__link 1
+          li.history__item
+            a(href="#").history__link 2
+          li.history__item
+            a(href="#").history__link 3
+          li.history__item
+            a(href="#").history__link Следующая
+    .catalog__footer
+      .catalog__footer-title Пара слов о Перфорарорах
+      .catalog__footer-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa beatae soluta aut obcaecati! Nostrum provident repellendus aliquid, laborum perspiciatis cumque similique ullam quos adipisci eligendi quae minima neque, aut dolor?
+
+
+
+
