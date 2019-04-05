@@ -28,3 +28,15 @@
     font-family: 'PT Sans Narrow Bold';
   }
 }
+
+@mixin cuprum($typeCuprum: 'regular') {
+  @if $typeCuprum == 'regular' {
+    font-family: 'Cuprum Regular';
+  } @else if $typeCuprum == 'bold' {
+    font-family: 'Cuprum Bold';
+  } @else if $typeCuprum == italic {
+    font-family: 'Cuprum Italic';
+  } @else if $typeCuprum == 'bold-italic' {
+    font-family: 'Cuprum Bold Italic';
+  }
+}

@@ -8,14 +8,13 @@ html, body {
 
 body {
   font-size: 16px;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .container{
   width: $container-width;
   margin: 0 auto;
   padding: 0 10px;
+  @include cuprum('regular');
   @extend %clearfix;
 }
 
