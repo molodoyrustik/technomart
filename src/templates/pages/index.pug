@@ -4,86 +4,134 @@ block title
   title Главная
 
 block content
-  .container
+  .main-wrap
+    <!-- / ========= header ========= \ -->
+    +header('Главная')
     main.index
       .features
-        .features__row
-          .feautres__item
-            .features__title Материалы
-            .features__name на любой вкус 
-          .feautres__item
-            .features__title Материалы
-            .features__name на любой вкус 
-          .feautres__item
-            .features__title Материалы
-            .features__name на любой вкус 
-        .features__row
-          .features__gallery
-            .gallery
-              .gallery__title Дрели
-              .gallery__text Соседям на радость!
-              figure.gallery__content
-                img.gallery__img(src="", alt="")
-              button.gallery__btn prev
-              button.gallery__next next
-              a(href="/catalog.html").gallery__link Открыть каталог
-          .features__column
-            .feautres__item
+        .container
+          .features__row
+            .features__item.features__item--one
               .features__title Материалы
-              .features__name на любой вкус 
-            .feautres__item
+              a(href="#").features__name на любой вкус 
+            .features__item.features__item--two
               .features__title Материалы
-              .features__name на любой вкус 
+              a(href="#").features__name на любой вкус 
+            .features__item.features__item--three
+              .features__title Материалы
+              a(href="#").features__name на любой вкус 
+          .features__row
+            .features__gallery
+              .gallery
+                .gallery__header
+                  .gallery__title Перфораторы
+                  .gallery__text Настроящие мужские игрушки
+                figure.gallery__content
+                  img.gallery__img(src="/images/gallery-img.png", alt="")
+                .gallery__btn.gallery__prev
+                  i.icon-left.gallery__btn-icon
+                  span prev
+                .gallery__btn.gallery__next
+                  i.icon-right.gallery__btn-icon
+                  span next
+                a(href="/catalog.html").gallery__link Открыть каталог
+            .features__column
+              .features__item.features__item--four
+                .features__title Материалы
+                a(href="#").features__name на любой вкус 
+              .features__item.features__item--five
+                .features__title Материалы
+                a(href="#").features__name на любой вкус 
       .popular-products
-        .popular-product__title-wrap
-          .popular-product__title Популярные товары:
-          a(href="#").popular-product__link Все популярные товары
-        .popular-product__wrap
-          .popular-product__item
-            .popular-product__item-wrap
-              img(src="", alt="").popular-product__item-img
-            .popular-product__item-title Перфоратор BOSCH BEG 9000
-            .popular-product__item-old-price 32500 Р.
-            .popular-product__item-price 25500 Р.
-      .popular-products
-        .popular-product__title-wrap
-          .popular-product__title Популярные товары:
-          a(href="#").popular-product__link Все производители
-        .popular-product__wrap
-          .popular-product__item
-            .popular-product__item-wrap
-              img(src="", alt="").popular-product__item-img
+        .container
+          .popular-product__title-wrap
+            .popular-product__title Популярные товары:
+            a(href="#").popular-product__link Все популярные товары
+          .popular-product__wrap
+            .popular-product__item
+              .popular-product__item-img-wrap
+                img(src="/images/product-item.png", alt="").popular-product__item-img
+              .popular-product__item-title Перфоратор manufacturers-1 BEG 9000
+              .popular-product__item-old-price 32500 Р.
+              .popular-product__item-price 25500 Р.
+            .popular-product__item
+              .popular-product__item-img-wrap
+                img(src="/images/product-item.png", alt="").popular-product__item-img
+              .popular-product__item-title Перфоратор manufacturers-1 BEG 9000
+              .popular-product__item-old-price 32500 Р.
+              .popular-product__item-price 25500 Р.
+            .popular-product__item
+              .popular-product__item-img-wrap
+                img(src="/images/product-item.png", alt="").popular-product__item-img
+              .popular-product__item-title Перфоратор manufacturers-1 BEG 9000
+              .popular-product__item-old-price 32500 Р.
+              .popular-product__item-price 25500 Р.
+            .popular-product__item
+              .popular-product__item-img-wrap
+                img(src="/images/product-item.png", alt="").popular-product__item-img
+              .popular-product__item-title Перфоратор manufacturers-1 BEG 9000
+              .popular-product__item-old-price 32500 Р.
+              .popular-product__item-price 25500 Р.
+      .manufacturers
+        .container
+          .manufacturers__title-wrap
+            .manufacturers__title Популярные производители:
+            a(href="#").manufacturers__link Все производители
+          .manufacturers__wrap
+            ul.manufacturers__list
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-1.png", alt="").manufacturers__img
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-2.png", alt="").manufacturers__img
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-3.png", alt="").manufacturers__img
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-4.png", alt="").manufacturers__img
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-5.png", alt="").manufacturers__img
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-6.png", alt="").manufacturers__img
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-7.png", alt="").manufacturers__img
+              .manufacturers__item
+                img(src="/images/manufacturers/manufacturers-8.png", alt="").manufacturers__img
       .index-service
-        .index-serice__title Сервисы
-        .index-service__text Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятнымиdiv
-        .index-service__delivery
+        .container
+          .index-service__title Сервисы
+          .index-service__text Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными
           .index-service__delivery
-            .index-service__delivery-wrap-img
-              img(src="", alt="").index-service__delivery-img
-              .index-service__delivery-wrap
-                .index-service__delivery-title Доставка
-                .index-service__delivery-tex Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            ul.index-service__list
+              li.index-service__item
+                a(href="#").index-service__link Доставка
+              li.index-service__item
+                a(href="#").index-service__link Гарантия
+              li.index-service__item
+                a(href="#").index-service__link Кредит
+            .index-service__delivery-wrap
+              .index-service__delivery-title Доставка
+              .index-service__delivery-text 
+                | Мы с удовольствием доставим ваш товар прямо
+                br
+                | к вашему подъезду совершенно бесплатно!
+                br
+                | Ведь мы неплохо заработаем,
+                br
+                | поднимая его на ваш этаж!
+                br
       .index-contact
-        .index-contact__left
-          .index-contact__title Комания Техномарт
-          .index-contact__text Настоящий мужской шоппинг начинается здесь! Оромный выбор товаров для ремонта и строительства не оставит равнодушнными любилетей сэкономить на гастарбайтерах.
-          .index-contact__text Настоящий мужской шоппинг начинается здесь! Оромный выбор товаров для ремонта и строительства не оставит равнодушнными любилетей сэкономить на гастарбайтерах.
-          ul.index-contact__list
-            li.index-contact__item Деловые линии
-            li.index-contact__item Автотрейдинг
-            li.index-contact__item ЖелДорЭкспедиция
-        .index-contact__right
-          .index-contact__title Контакты
-          .index-contact__text Вы можете забрать товар сами, заевах в наш офис:
-          .index-contact__map
-          a.index-contact__link(href="#") Заблудились? Напишите нам!
-         
-
-
-
-            
-
-    
-
-    
-
+        .container
+          .index-contact__left
+            .index-contact__title Комания Техномарт
+            .index-contact__text Настоящий мужской шоппинг начинается здесь! Оромный выбор товаров для ремонта и строительства не оставит равнодушнными любилетей сэкономить на гастарбайтерах.
+            .index-contact__text.index-contact__text-first Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: 
+            ul.index-contact__list
+              li.index-contact__item Деловые линии
+              li.index-contact__item Автотрейдинг
+              li.index-contact__item ЖелДорЭкспедиция
+            a(href="#").index-contact__link Подробнее о компании
+          .index-contact__right
+            .index-contact__title Контакты
+            .index-contact__text.index-contact__text-right Вы можете забрать товар сами, заевах в наш офис:
+            .index-contact__map
+              img.index-contact__img(src="/images/map.png", alt="")
+            a.index-contact__link.index-contact__link-right(href="#") Заблудились? Напишите нам!

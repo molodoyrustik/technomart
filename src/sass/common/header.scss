@@ -180,7 +180,6 @@
 
 .header-second {
   padding-top: 45px;
-  padding-left: 55px;
   padding-bottom: 45px;
   background-color: #f1f5f7;
 }
@@ -193,6 +192,8 @@
 
 .header-second-wrap {
   display: flex;
+  padding-left: 50px;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -240,4 +241,78 @@
   line-height: 14px;
   text-align: center;
   color: #32425c;
+}
+
+.header__login-wrap {
+
+}
+
+.header__login {
+  display: inline-block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 14px;
+  padding-right: 27px;
+  @include cuprum('regualr');
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    color: #ee3643;
+  }
+
+  &:hover .header__login--icon {
+    color: #32425c;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+
+  &:active .header__login--icon {
+    color: #b2b2b2;
+  }
+
+  span {
+    margin-left: 14px;
+    vertical-align: middle;
+  }
+}
+
+.header__login--icon {
+  color: #c5c5c5;
+
+  &::before {
+    margin: 0;
+  }
+}
+
+.header__registration{
+  width: 150px;
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  @include cuprum('regualr');
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    color: #ee3643;
+  }
+  
+  &:active {
+    color: #b2b2b2;
+  }
 }

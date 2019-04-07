@@ -1,14 +1,15 @@
 (function() {
   'use strict';
+  const searchWrap = document.querySelector('.header__search-wrap');
   const searchInput = document.querySelector('.header__search');
   const searchPlaceholder = document.querySelector('.header__search-placeholder');
   const searchIcon = document.querySelector('.header__search-icon');
 
-  searchInput.addEventListener('mouseover', () => {
+  searchWrap.addEventListener('mouseover', () => {
     searchIcon.classList.add('header__search-icon--hover')
     searchInput.classList.add('header__search--hover');
   })
-  searchInput.addEventListener('mouseout', () => {
+  searchWrap.addEventListener('mouseout', () => {
     searchIcon.classList.remove('header__search-icon--hover')
     searchInput.classList.remove('header__search--hover');
   })

@@ -1,0 +1,31 @@
+.navigation {
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__item {
+
+}
+
+.navigation__link {
+  display: block;
+  padding: 21px 33.7px;
+  @include cuprum('regular');
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #32425c;
+
+  &:hover {
+    background-color: #293449;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
